@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function AdSlot() {
+export default function AdSlot({ id = "371414" }: { id?: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const loaded = useRef(false);
 
@@ -8,10 +8,10 @@ export default function AdSlot() {
     if (!ref.current || loaded.current) return;
     loaded.current = true;
     const s = document.createElement("script");
-    s.src = "https://linkslot.ru/bancode_new.php?id=371414";
+    s.src = `https://linkslot.ru/bancode_new.php?id=${id}`;
     s.async = true;
     ref.current.appendChild(s);
-  }, []);
+  }, [id]);
 
-  return <div id="slot_371414" ref={ref} />;
+  return <div id={`slot_${id}`} ref={ref} />;
 }
