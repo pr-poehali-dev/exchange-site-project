@@ -35,6 +35,10 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <div className="px-4 pt-4">
+        <AdSlot id="371415" />
+      </div>
+
       {/* Header */}
       <header className="border-b border-border px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -71,9 +75,6 @@ export default function Index() {
       {/* Main content */}
       <main className="flex-1 px-4 py-8 max-w-6xl mx-auto w-full">
         <div className="fade-in">
-          <div className="mb-6">
-            <AdSlot id="371415" />
-          </div>
           <div className="mb-8">
             <h1 className="text-2xl font-semibold text-foreground tracking-tight">Обмен валют</h1>
             <p className="text-muted-foreground text-sm mt-1">Лучшие курсы, мгновенный обмен</p>
