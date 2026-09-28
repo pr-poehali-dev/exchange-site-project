@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Icon from "@/components/ui/icon";
+import AdSlot from "@/components/AdSlot";
 
 const RATES = [
   { from: "BTC", to: "USDT", rate: 68420.5, change: +1.24 },
@@ -85,6 +86,9 @@ export default function Index() {
                   frameBorder={0}
                   style={{ minWidth: 400, width: "100%", minHeight: 600, height: "100%", display: "block" }}
                 />
+              </div>
+              <div className="mt-6">
+                <AdSlot />
               </div>
             </div>
 
