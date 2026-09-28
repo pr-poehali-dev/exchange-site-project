@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Icon from "@/components/ui/icon";
 import AdSlot from "@/components/AdSlot";
+import ApexAd from "@/components/ApexAd";
 
 const RATES = [
   { from: "BTC", to: "USDT", rate: 68420.5, change: +1.24 },
@@ -93,6 +94,9 @@ export default function Index() {
               </div>
               <div className="mt-6">
                 <AdSlot />
+              </div>
+              <div className="mt-6">
+                <ApexAd />
               </div>
             </div>
 
